@@ -1,5 +1,4 @@
-var quizQuestions = [
-    {
+var quizQuestions = [{
         question: 'What color is the sky?',
         answer: 'blue'
     },
@@ -29,7 +28,7 @@ function buildList(arr) {
 }
 
 // Loop through questions, compare, add to appropriate array
-for (i=0; i < quizQuestions.length; i+=1) {
+for (i = 0; i < quizQuestions.length; i += 1) {
     question = quizQuestions[i].question;
     answer = quizQuestions[i].answer;
     response = prompt(question);
@@ -45,7 +44,7 @@ for (i=0; i < quizQuestions.length; i+=1) {
 function print(message) {
     var outputDiv = document.getElementById('output');
     outputDiv.innerHTML = message;
-  }
+}
 
 html = '<h1>Questions Correct: ' + correctTally;
 html += '<h2>You got these questions correct:</h2>';

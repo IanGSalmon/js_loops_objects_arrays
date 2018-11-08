@@ -25,7 +25,7 @@ function buildList(arr) {
 }
 
 // Loop through questions, compare, add to appropriate array
-for (i=0; i < quizQuestions.length; i+=1) {
+for (i = 0; i < quizQuestions.length; i += 1) {
     question = quizQuestions[i][0];
     answer = quizQuestions[i][1];
     response = prompt(question);
@@ -41,7 +41,7 @@ for (i=0; i < quizQuestions.length; i+=1) {
 function print(message) {
     var outputDiv = document.getElementById('output');
     outputDiv.innerHTML = message;
-  }
+}
 
 html = '<h1>Questions Correct: ' + correctTally;
 html += '<h2>You got these questions correct:</h2>';
